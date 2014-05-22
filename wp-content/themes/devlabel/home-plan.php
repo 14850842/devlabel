@@ -39,5 +39,5 @@
 		wp_reset_postdata();
 		?>
 	</div> <!-- container -->
-	<div class="swiper-scrollbar"></div>  
+	<div class="swiper-scrollbar text-center"></div>  
 </section><!--/.services-->
