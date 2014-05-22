@@ -12,8 +12,11 @@ function ppm_scripts_and_styles() {
         wp_register_script( 'ppm', get_stylesheet_directory_uri() . '/includes/js/ppm.js', array('third-party','jquery'), '3.0.0',true);
         
         
+
         wp_enqueue_script('third-party');
+
         wp_enqueue_script('ppm');
+
 
 
     }
@@ -145,13 +148,6 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
             'show_names' => true, // Show field names on the left
             // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
             'fields'     => array(
-                 array(
-                    'name' => 'Service Logo',
-                    'desc' => 'Upload an image',
-                    'id' => $prefix . 'service_image',
-                    'type' => 'file',
-                    'allow' => array( 'url', 'attachment' ) // limit to just attachments with array( 'attachment' )
-                ),
                 array(
                     'name' => __( 'Page Sub Heading', 'cmb' ),
                     'desc' => __( 'enter the main page sub heading', 'cmb' ),

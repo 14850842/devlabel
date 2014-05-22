@@ -279,7 +279,7 @@ body {
   font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.428571429;
-  color: #333333;
+  color: #222222;
   background-color: #ffffff;
 }
 input,
@@ -1925,7 +1925,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #626262;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4432,7 +4432,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #333333;
+  color: #222222;
 }
 .alert {
   padding: 15px;
@@ -8236,23 +8236,102 @@ body {
 .inner .cta-section {
   margin-top: 75px;
 }
-#services .title {
+.section-heading .title {
   font-size: 39px;
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 75px;
   margin-bottom: 75px;
 }
-#services .thumbnail {
+#essentials .thumbnail {
   border: none;
 }
-#services .thumbnail img {
+#essentials .thumbnail img {
   margin: auto;
 }
-#services .thumbnail h4 {
+#essentials .thumbnail h4 {
   text-transform: uppercase;
   font-size: 19px;
   font-weight: 700;
+}
+#process {
+  background: #efeff1;
+}
+#process .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 125px;
+  margin-top: 75px;
+}
+#process .swiper-container h4 {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+#process .swiper-container h4 span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#process .swiper-container h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#process .swiper-container h6 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#process .swiper-container img {
+  margin: auto;
+}
+#work,
+#partners {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+#work .title,
+#partners .title {
+  font-size: 39px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+#team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+#team .title {
+  font-size: 39px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #fff;
+}
+#team .team-member {
+  text-align: center;
+}
+#team .team-member img {
+  margin: auto;
+}
+#team .team-member h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#team .team-member h4 span {
+  padding: 0px 5px;
+}
+#team .team-member .description {
+  color: #fff;
+}
+.divider > div {
+  height: 20px;
+  width: 50%;
+  float: left;
 }
 .gform_wrapper .gform_button {
   display: inline-block;
@@ -8375,6 +8454,126 @@ fieldset[disabled] .gform_wrapper .gform_button.active {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #e5266b;
+}
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px, 0px);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+.swiper-slide {
+  float: left;
+}
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+  /* Specify Swiper's Size: */
+  /*width:200px;
+	height: 100px;*/
+}
+.swiper-slide {
+  /* Specify Slides's Size: */
+  /*width: 100%;
+	height: 100%;*/
+}
+.swiper-slide-active {
+  /* Specific active slide styling: */
+}
+.swiper-slide-visible {
+  /* Specific visible slide styling: */
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+  /* Stylize pagination button: */
+}
+.swiper-active-switch {
+  /* Specific active button style: */
+}
+.swiper-visible-switch {
+  /* Specific visible button style: */
+}
+.swiper-scrollbar {
+  position: relative;
+  -ms-touch-action: none;
+  background: #e0e0e4;
+  height: 22px;
+  margin: 20px auto;
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #3698c9;
+}
+.swiper-scrollbar-cursor-drag {
+  cursor: pointer;
 }
 /*
 RETINA (2x RESOLUTION DEVICES)

@@ -36,5 +36,19 @@ jQuery(document).ready(function(){
 	    }
 	});
 
+    var swiper = new Swiper('.swiper-container', {
+        calculateHeight:true,
+        //Scrollbar:
+        scrollbar: {
+            container : '.swiper-scrollbar',
+            draggable : true,
+            hide: false,
+            snapOnRelease: true
+        }
+    });
+
+          
+
 
 });
+

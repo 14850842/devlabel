@@ -31,6 +31,16 @@ Template Name: Home Page Template
 
 <?php get_template_part('home','services'); ?>
 
+<?php get_template_part('home','plan'); ?>
+
+<?php get_template_part('home','work'); ?>
+
+<?php get_template_part('home','partners'); ?>
+
+<?php get_template_part('home','team'); ?>
+
+
+
 
 
 <?php get_footer(); ?>

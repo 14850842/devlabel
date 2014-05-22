@@ -2,7 +2,7 @@
 
 <?php $page =  get_page_by_title('The Essentials'); ?>
 
-<section id="services">
+<section id="essentials">
 	<div class="container">
 		<header class="section-heading text-center">
 			<h2 class="title"><?php echo get_the_title($page->ID);?></h2>
