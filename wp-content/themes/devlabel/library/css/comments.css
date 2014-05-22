@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less NameError: variable @brand-primary is undefined in \\Users\\iaanvn\\Sites\\netcms\\wp-content\\themes\\netcms\\library\\less\\brew\\comments.less on line 132, column 27: \A 131 		background: #fff; \A 132 		border-left: 10px solid @brand-primary; \A 133 	} \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 

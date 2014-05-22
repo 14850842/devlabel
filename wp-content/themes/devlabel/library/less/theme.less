@@ -1,0 +1,139 @@
+// Section Heading
+/*header*/
+.vertical{
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	-webkit-transition: background-color 0.4s ease-in-out;
+	-moz-transition: background-color 0.4s ease-in-out;
+	-ms-transition: background-color 0.4s ease-in-out;
+	-o-transition: background-color 0.4s ease-in-out;
+	transition: background-color 0.4s ease-in-out;
+	&:before{
+		content: '';
+		height: 100%;
+	}
+	&:before,h3,.inner {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	h3{
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 16px;
+		color: #fff;
+		letter-spacing: 2px;
+		display: inline-block;
+		padding: 15px 25px;
+		border: 2px solid #fff;
+	}
+}
+
+.thumb{
+	border:7px solid #e5e5e5;
+}
+
+.img-holder{
+	position: relative;
+}
+
+.holder {
+	.vertical();
+	.section-heading{
+
+	}
+	
+}
+
+.btn-dev{
+	background: transparent;
+	border-width: 2px;
+	text-transform: uppercase;
+}
+
+body{
+	padding-top: 0px;
+}
+.inner{
+	.introduction{
+		font-size: 55px;
+		color: #fff;
+		line-height: 1.19;
+		font-weight: 300;
+	}
+	.cta-section{
+		margin-top: 75px;
+	}
+}
+
+#services{
+	.title{
+		font-size:@font-size-h1;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-top: 75px;
+		margin-bottom: 75px;
+	}
+	.thumbnail{
+		border:none;
+		img{
+			margin:auto;
+		}
+		h4{
+			text-transform: uppercase;
+			font-size: @font-size-large;
+			font-weight: 700;
+		}
+	}
+}
+
+
+
+// GRAVITY FORMS
+.gform_wrapper{
+	.gform_button{
+		.btn();
+		.btn-success();
+	}
+	.gform_footer {
+	padding: 6px 0 10px 0;
+	margin: 6px 0 0 0;
+	clear: both;
+	}
+
+	h3.gform_title{
+		font-weight: 400 !important;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 30px !important;
+		letter-spacing: 3px !important;
+	}
+
+	.gform_fields .gfield input[type=text], .gform_fields .gfield textarea{
+		text-transform: uppercase;
+		border:1px solid #858585;
+		margin-bottom: 20px;
+		padding: 10px;
+		color: #c9c9c9;
+	}
+	.gform_footer{
+		margin-top: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.validation_error{
+		font-weight: 500 !important;
+		text-transform: uppercase;
+	}
+}
+.gform_confirmation_message{
+	background: #fff;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: @brand-primary;
+}

@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:'Less NameError: .box-shadow is undefined in \\Users\\admin\\Documents\\Sites\\marinas\\wp-content\\themes\\marinas\\library\\less\\bootstrap\\panels.less on line 12, column 3: \A 11   border-radius: @panel-border-radius; \A 12   .box-shadow(0 1px 1px rgba(0,0,0,.05)); \A 13 } \A  \A '}body *{display:none}

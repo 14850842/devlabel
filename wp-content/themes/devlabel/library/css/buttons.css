@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less NameError: variable @padding-base-vertical is undefined in \\Users\\iaanvn\\Sites\\netcms\\wp-content\\themes\\netcms\\library\\less\\bootstrap\\buttons.less on line 19, column 16: \A 18   white-space: nowrap; \A 19   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base); \A 20   .user-select(none); \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 

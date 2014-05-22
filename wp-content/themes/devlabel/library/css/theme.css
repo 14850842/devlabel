@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less NameError: variable @screen-xs is undefined in \\Users\\iaanvn\\Sites\\netcms\\wp-content\\themes\\netcms\\library\\less\\theme.less on line 10, column 21: \A 9 	color: #fff; \A 10 	@media (min-width: @screen-xs) { \A 11 		padding-top: 70px; \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 

@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less NameError: variable @brand-primary is undefined in \\Users\\iaanvn\\Sites\\netcms\\wp-content\\themes\\netcms\\library\\less\\brew\\sidebar.less on line 44, column 10: \A 43 	h5{ \A 44 		color: @brand-primary; \A 45 		text-transform: uppercase; \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 
