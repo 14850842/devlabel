@@ -7,6 +7,8 @@ jQuery(document).ready(function(){
         parallax:true
     });
 
+    jQuery('.swiper-scrollbar-drag').append('adssad');
+
 	jQuery('body').scrollspy({ target: '.navbar-collapse' })
 
     jQuery('.menu-item-type-custom a,.scrollit').bind('click',function(event){
@@ -43,12 +45,13 @@ jQuery(document).ready(function(){
             container : '.swiper-scrollbar',
             draggable : true,
             hide: false,
-            snapOnRelease: true
+            snapOnRelease: true,
         }
     });
 
-          
-
-
 });
 
+jQuery(window).load(function(){
+
+    jQuery('.swiper-scrollbar-drag').append('<span class="fa fa-caret-left"></span> <span class="fa fa-caret-right"></span>');
+});

@@ -8287,6 +8287,9 @@ body {
 #process .swiper-container img {
   margin: auto;
 }
+#process .swiper-scrollbar-drag .fa {
+  color: #fff;
+}
 #work,
 #partners {
   margin-top: 180px;
@@ -8304,6 +8307,12 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+#team p {
+  color: #fff;
+}
+#team .main-team-page {
+  margin-bottom: 45px;
+}
 #team .title {
   font-size: 39px;
   text-transform: uppercase;
@@ -8317,6 +8326,13 @@ body {
 }
 #team .team-member img {
   margin: auto;
+  border: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+#team .team-member img:hover {
+  border: 10px solid #fff;
+  border-radius: 100%;
 }
 #team .team-member h4 {
   text-transform: uppercase;
