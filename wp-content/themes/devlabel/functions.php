@@ -154,6 +154,12 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
                     'id'   => $prefix . 'sub_heading',
                     'type' => 'text',
                 ),
+                array(
+                    'name' => __( 'Key Words', 'cmb' ),
+                    'desc' => __( 'enter the key words that you want', 'cmb' ),
+                    'id'   => $prefix . 'key_words',
+                    'type' => 'text',
+                ),
             )
         );
 
