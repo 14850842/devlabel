@@ -8227,6 +8227,9 @@ This is just for the sample BREW site.  Feel free to delete
 body {
   padding-top: 0px;
 }
+body > div {
+  border: 30px solid #fff;
+}
 .inner .introduction {
   font-size: 55px;
   color: #fff;

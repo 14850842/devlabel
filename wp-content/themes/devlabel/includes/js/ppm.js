@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
 	jQuery('.home-image,.single-image').imageScroll({
         imageAttribute: (touch === true) ? 'image-mobile' : 'image',
         touch: touch,
-        coverRatio:0.88,
+        coverRatio:0.9,
         parallax:true
     });
 
