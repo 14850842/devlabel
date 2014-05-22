@@ -2241,18 +2241,18 @@ fieldset[disabled] .btn-warning.active {
   background-color: #fcc100;
 }
 .btn-danger {
-  color: #e41365;
-  background-color: #e41365;
-  border-color: #cc115b;
+  color: #80163c;
+  background-color: #80163c;
+  border-color: #6a1232;
 }
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
-  color: #e41365;
-  background-color: #be1054;
-  border-color: #940c42;
+  color: #80163c;
+  background-color: #5d102c;
+  border-color: #360919;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -2274,12 +2274,12 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #e41365;
-  border-color: #cc115b;
+  background-color: #80163c;
+  border-color: #6a1232;
 }
 .btn-danger .badge {
-  color: #e41365;
-  background-color: #e41365;
+  color: #80163c;
+  background-color: #80163c;
 }
 .btn-link {
   color: #e5266b;
@@ -3649,7 +3649,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 70px;
   margin-bottom: 21px;
   border: 1px solid transparent;
 }
@@ -3746,7 +3746,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 14.5px 15px;
+  padding: 4.5px 15px;
   font-size: 19px;
   line-height: 21px;
   height: 21px;
@@ -3766,8 +3766,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -3791,7 +3791,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.25px -15px;
+  margin: 2.25px -15px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -3829,8 +3829,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 14.5px;
-    padding-bottom: 14.5px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
@@ -3854,8 +3854,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -3919,20 +3919,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
 }
 .navbar-btn.btn-sm {
-  margin-top: 9.5px;
-  margin-bottom: 9.5px;
+  margin-top: 19.5px;
+  margin-bottom: 19.5px;
 }
 .navbar-btn.btn-xs {
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .navbar-text {
-  margin-top: 14.5px;
-  margin-bottom: 14.5px;
+  margin-top: 24.5px;
+  margin-bottom: 24.5px;
 }
 @media (min-width: 768px) {
   .navbar-text {
@@ -4326,11 +4326,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #c99a00;
 }
 .label-danger {
-  background-color: #e41365;
+  background-color: #80163c;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #b50f50;
+  background-color: #540f28;
 }
 .badge {
   display: inline-block;
@@ -4577,7 +4577,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-danger {
-  background-color: #e41365;
+  background-color: #80163c;
 }
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -7286,14 +7286,14 @@ Styles and classes used throughout the entire BREW framework
 
 ******************************************************************/
 body {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 body.admin-bar .navbar-fixed-top {
   top: 46px;
 }
 @media (min-width: 783px) {
   body.admin-bar .navbar-fixed-top {
-    top: 32px;
+    top: 102px;
   }
 }
 /******************************************************************
@@ -8227,8 +8227,57 @@ This is just for the sample BREW site.  Feel free to delete
 body {
   padding-top: 0px;
 }
-body > div {
+body > div:first-child {
   border: 30px solid #fff;
+}
+body .navbar-brand {
+  padding: 0px;
+}
+body .container > .navbar-header,
+body .container-fluid > .navbar-header,
+body .container > .navbar-collapse,
+body .container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  body .container > .navbar-header,
+  body .container-fluid > .navbar-header,
+  body .container > .navbar-collapse,
+  body .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: -70px;
+  }
+}
+.header .navbar {
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+  border: none;
+  z-index: 9999;
+  top: 70px;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+}
+.header .navbar a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.header .navbar .collective a {
+  background-color: #3698c9;
+}
+a.header .navbar .collective a:hover {
+  background-color: #2b7aa1;
+}
+.header .navbar .nav a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header.view .navbar {
+  background: #80163c;
+  position: fixed;
+  top: 0px;
 }
 .inner .introduction {
   font-size: 55px;

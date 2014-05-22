@@ -56,10 +56,58 @@
 
 body{
 	padding-top: 0px;
-	> div{
+	> div:first-child{
 		border:30px solid #fff;
 	}
+	.navbar-brand{
+		padding: 0px;
+	}
+	.container,
+	.container-fluid {
+	  > .navbar-header,
+	  > .navbar-collapse {
+	    margin-right: -@navbar-padding-horizontal;
+	    margin-left:  -@navbar-padding-horizontal;
+
+	    @media (min-width: @grid-float-breakpoint) {
+	      margin-right: 0;
+	      margin-left:  -70px;
+	    }
+	  }
+	}
 }
+
+.header{
+	.navbar{
+		position: absolute;
+		width: 100%;
+		min-height: 70px;
+		border:none;
+		z-index: 9999;
+		top:70px;
+		.transition(background-color 0.8s);
+		a{
+			color: #fff;
+			text-transform: uppercase;
+			font-size: @font-size-small;
+		}
+		.collective a{
+			.bg-info();
+		}
+		.nav a{
+			.navbar-vertical-align(30px);
+		}
+	}
+	&.view{
+		.navbar{
+			background: @brand-danger;
+			position: fixed;
+			top:0px;
+		}
+	}
+}
+
+
 .inner{
 	.introduction{
 		font-size: 55px;

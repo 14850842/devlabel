@@ -1,4 +1,14 @@
 jQuery(document).ready(function(){
+
+    jQuery(window).scroll(function(){
+        if  (jQuery(window).scrollTop() >= 70){
+            jQuery('.home header').addClass('view');
+        }
+        else if  (jQuery(window).scrollTop() == 0){
+            jQuery('.home header').removeClass('view');
+        }
+    });
+
 	var touch = Modernizr.touch;
 	jQuery('.home-image,.single-image').imageScroll({
         imageAttribute: (touch === true) ? 'image-mobile' : 'image',
@@ -6,6 +16,7 @@ jQuery(document).ready(function(){
         coverRatio:0.9,
         parallax:true
     });
+
 
     jQuery('.swiper-scrollbar-drag').append('adssad');
 
