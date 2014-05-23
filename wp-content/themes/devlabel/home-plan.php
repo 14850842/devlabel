@@ -25,8 +25,21 @@
 								</div>
 								<div class="col-md-4">
 									<h4><span class="bg-info"><?php the_title();?></span></h4>
-									<h5 class="text-info">Friendly</h5>
-									<h6>Discuss / Analyze / Discover</h6>
+									<!-- add content here -->
+									<?php
+										global $post;
+										$text = get_post_meta( $post->ID, '_ppm_sub_heading', true );
+										echo $text;
+										?>
+										<br>
+									<?php
+										global $post;
+										$text = get_post_meta( $post->ID, '_ppm_key_words', true );
+										echo $text;
+										?>
+									<!-- <h5 class="text-info">Friendly</h5>
+									<h6>Discuss / Analyze / Discover</h6> -->
+
 									<?php the_content();?>
 								</div>
 							</div>
