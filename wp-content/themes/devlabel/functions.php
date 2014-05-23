@@ -163,67 +163,125 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
             )
         );
 
+ $meta_boxes['team_metabox'] = array(
+            'id'         => 'team_metabox',
+            'title'      => __( 'Team Options', 'cmb' ),
+            'pages'      => array( 'team-member', ), // Post type
+            'context'    => 'normal',
+            'priority'   => 'high',
+            'show_names' => true, // Show field names on the left
+            // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+            'fields'     => array(
+                array(
+                    'name' => __( 'Facebook', 'cmb' ),
+                    'desc' => __( 'enter the url of social network', 'cmb' ),
+                    'id'   => $prefix . 'social_network_1',
+                    'type' => 'text_url',
+                ),
+                array(
+                    'name' => __( 'Twitter', 'cmb' ),
+                    'desc' => __( 'enter the url of social network', 'cmb' ),
+                    'id'   => $prefix . 'social_network_2',
+                    'type' => 'text_url',
+                ),
+                array(
+                    'name' => __( 'Pinterest', 'cmb' ),
+                    'desc' => __( 'enter the url of social network', 'cmb' ),
+                    'id'   => $prefix . 'social_network_1',
+                    'type' => 'text_url',
+                ),
+                array(
+                    'name' => __( 'LinkedIn', 'cmb' ),
+                    'desc' => __( 'enter the url of social network', 'cmb' ),
+                    'id'   => $prefix . 'social_network_2',
+                    'type' => 'text_url',
+                ),
+                array(
+                    'name' => __( 'GitHub', 'cmb' ),
+                    'desc' => __( 'enter the url of social network', 'cmb' ),
+                    'id'   => $prefix . 'social_network_1',
+                    'type' => 'text_url',
+                ),
+                array(
+                    'name' => __( 'Behance', 'cmb' ),
+                    'desc' => __( 'enter the url of social network', 'cmb' ),
+                    'id'   => $prefix . 'social_network_2',
+                    'type' => 'text_url',
+                ),
+                array(
+                    'name' => __( 'Dribble', 'cmb' ),
+                    'desc' => __( 'enter the url of social network', 'cmb' ),
+                    'id'   => $prefix . 'social_network_1',
+                    'type' => 'text_url',
+                ),
+            )
+        );
+
     return $meta_boxes;
 }
 
 
-add_filter('redux/options/brew_options/sections', 'child_sections');
+  add_filter('redux/options/brew_options/sections', 'child_sections');
 
-add_filter( 'woothemes_our_team_member_fields', 'my_new_fields' );
-function my_new_fields( $fields ) {
-    $fields['Facebook'] = array(
-        'name' => __( 'Facebook', 'our-team-by-woothemes' ),
-        'description' => __( '', 'our-team-by-woothemes' ),
-        'id'   => $prefix . 'facebookurl',
-        'type' => 'text_url',
-    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
-        'default' => '',
-        'section' => 'info'
-    );
-    $fields['Twitter'] = array(
-        'name' => __( 'Twitter', 'our-team-by-woothemes' ),
-        'description' => __( '', 'our-team-by-woothemes' ),
-        'type' => 'text_url',
-        'default' => '',
-        'section' => 'info'
-    );
-    $fields['Pinterest'] = array(
-        'name' => __( 'Pinterest', 'our-team-by-woothemes' ),
-        'description' => __( '', 'our-team-by-woothemes' ),
-        'type' => 'text_url',
-        'default' => '',
-        'section' => 'info'
-    );
-    $fields['LinkedIn'] = array(
-        'name' => __( 'LinkedIn', 'our-team-by-woothemes' ),
-        'description' => __( '', 'our-team-by-woothemes' ),
-        'type' => 'text_url',
-        'default' => '',
-        'section' => 'info'
-    );
-    $fields['GitHub'] = array(
-        'name' => __( 'GitHub', 'our-team-by-woothemes' ),
-        'description' => __( '', 'our-team-by-woothemes' ),
-        'type' => 'text_url',
-        'default' => '',
-        'section' => 'info'
-    );
-    $fields['Behance'] = array(
-        'name' => __( 'Behance', 'our-team-by-woothemes' ),
-        'description' => __( '', 'our-team-by-woothemes' ),
-        'type' => 'text_url',
-        'default' => '',
-        'section' => 'info'
-    );
-    $fields['Dribble'] = array(
-        'name' => __( 'Dribble', 'our-team-by-woothemes' ),
-        'description' => __( '', 'our-team-by-woothemes' ),
-        'type' => 'text_url',
-        'default' => '',
-        'section' => 'info'
-    );
-    return $fields;
-}
+
+
+
+
+// add_filter( 'woothemes_our_team_member_fields', 'my_new_fields' );
+// function my_new_fields( $fields ) {
+//     $fields['Facebook'] = array(
+//         'name' => __( 'Facebook', 'our-team-by-woothemes' ),
+//         'description' => __( '', 'our-team-by-woothemes' ),
+//         'id'   => $prefix . 'facebookurl',
+//         'type' => 'text_url',
+//     // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
+//         'default' => '',
+//         'section' => 'info'
+//     );
+//     $fields['Twitter'] = array(
+//         'name' => __( 'Twitter', 'our-team-by-woothemes' ),
+//         'description' => __( '', 'our-team-by-woothemes' ),
+//         'type' => 'text_url',
+//         'default' => '',
+//         'section' => 'info'
+//     );
+//     $fields['Pinterest'] = array(
+//         'name' => __( 'Pinterest', 'our-team-by-woothemes' ),
+//         'description' => __( '', 'our-team-by-woothemes' ),
+//         'type' => 'text_url',
+//         'default' => '',
+//         'section' => 'info'
+//     );
+//     $fields['LinkedIn'] = array(
+//         'name' => __( 'LinkedIn', 'our-team-by-woothemes' ),
+//         'description' => __( '', 'our-team-by-woothemes' ),
+//         'type' => 'text_url',
+//         'default' => '',
+//         'section' => 'info'
+//     );
+//     $fields['GitHub'] = array(
+//         'name' => __( 'GitHub', 'our-team-by-woothemes' ),
+//         'description' => __( '', 'our-team-by-woothemes' ),
+//         'type' => 'text_url',
+//         'default' => '',
+//         'section' => 'info'
+//     );
+//     $fields['Behance'] = array(
+//         'name' => __( 'Behance', 'our-team-by-woothemes' ),
+//         'description' => __( '', 'our-team-by-woothemes' ),
+//         'type' => 'text_url',
+//         'default' => '',
+//         'section' => 'info'
+//     );
+//     $fields['Dribble'] = array(
+//         'name' => __( 'Dribble', 'our-team-by-woothemes' ),
+//         'description' => __( '', 'our-team-by-woothemes' ),
+//         'type' => 'text_url',
+//         'default' => '',
+//         'section' => 'info'
+//     );
+//     return $fields;
+// }
 
 
 
