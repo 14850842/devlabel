@@ -168,3 +168,62 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 
 
 add_filter('redux/options/brew_options/sections', 'child_sections');
+
+add_filter( 'woothemes_our_team_member_fields', 'my_new_fields' );
+function my_new_fields( $fields ) {
+    $fields['Facebook'] = array(
+        'name' => __( 'Facebook', 'our-team-by-woothemes' ),
+        'description' => __( '', 'our-team-by-woothemes' ),
+        'id'   => $prefix . 'facebookurl',
+        'type' => 'text_url',
+    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
+        'default' => '',
+        'section' => 'info'
+    );
+    $fields['Twitter'] = array(
+        'name' => __( 'Twitter', 'our-team-by-woothemes' ),
+        'description' => __( '', 'our-team-by-woothemes' ),
+        'type' => 'text_url',
+        'default' => '',
+        'section' => 'info'
+    );
+    $fields['Pinterest'] = array(
+        'name' => __( 'Pinterest', 'our-team-by-woothemes' ),
+        'description' => __( '', 'our-team-by-woothemes' ),
+        'type' => 'text_url',
+        'default' => '',
+        'section' => 'info'
+    );
+    $fields['LinkedIn'] = array(
+        'name' => __( 'LinkedIn', 'our-team-by-woothemes' ),
+        'description' => __( '', 'our-team-by-woothemes' ),
+        'type' => 'text_url',
+        'default' => '',
+        'section' => 'info'
+    );
+    $fields['GitHub'] = array(
+        'name' => __( 'GitHub', 'our-team-by-woothemes' ),
+        'description' => __( '', 'our-team-by-woothemes' ),
+        'type' => 'text_url',
+        'default' => '',
+        'section' => 'info'
+    );
+    $fields['Behance'] = array(
+        'name' => __( 'Behance', 'our-team-by-woothemes' ),
+        'description' => __( '', 'our-team-by-woothemes' ),
+        'type' => 'text_url',
+        'default' => '',
+        'section' => 'info'
+    );
+    $fields['Dribble'] = array(
+        'name' => __( 'Dribble', 'our-team-by-woothemes' ),
+        'description' => __( '', 'our-team-by-woothemes' ),
+        'type' => 'text_url',
+        'default' => '',
+        'section' => 'info'
+    );
+    return $fields;
+}
+
+
+
